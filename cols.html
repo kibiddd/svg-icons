@@ -1,0 +1,57 @@
+<html lang="en">
+    <head>
+        <title>Loading Columns 1</title>
+    </head>
+    <body>
+        <svg width="200" height="200"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect id="rec1" x="72" y="50" width="20" height="40" style="fill:#ea8d8d">
+                <animate 
+                    attributeName="height" 
+                    values="30;50;30;30"
+                    keyTimes="0;0.1;0.4;1"
+                    dur="1.2s"
+                    repeatCount="indefinite"
+                    id="rec1H"></animate>
+                <animate
+                    attributeName="y"
+                    values="50;40;50;50"
+                    keyTimes="0;0.1;0.4;1"
+                    dur="1.2s"
+                    repeatCount="indefinite"></animate>
+            </rect>
+            <rect id="rec2" x="100" y="50" width="20" height="40" style="fill:#de9bb4">
+                <animate 
+                    attributeName="height" 
+                    values="30;50;30;30"
+                    keyTimes="0;0.1;0.4;1"
+                    begin="rec1H.begin + 0.2s"
+                    dur="1.2s"
+                    repeatCount="indefinite"
+                    id="rec2H"></animate>
+                <animate
+                    attributeName="y"
+                    values="50;40;50;50"
+                    keyTimes="0;0.1;0.4;1"
+                    begin="rec1H.begin + 0.2s"
+                    dur="1.2s"
+                    repeatCount="indefinite"></animate>
+            </rect>
+            <rect id="rec3" x="128" y="50" width="20" height="40" style="fill:#a890fe">
+            <animate 
+                attributeName="height" 
+                values="30;50;30;30"
+                keyTimes="0;0.1;0.4;1"
+                begin="rec2H.begin + 0.2s"
+                dur="1.2s"
+                repeatCount="indefinite"></animate>
+            <animate
+                attributeName="y"
+                values="50;40;50;50"
+                keyTimes="0;0.1;0.4;1"
+                begin="rec2H.begin + 0.2s"
+                dur="1.2s"
+                repeatCount="indefinite"></animate>
+            </rect>
+        </svg>
+    </body>
+</html>
